@@ -1,16 +1,362 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" >
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Assignment 3 - Landing Page</title>
-    <link href="./output.css" rel="stylesheet" />
+    <link href="./output.css" rel="stylesheet"
+    />
   </head>
   <body>
-    <!-- ========== NAVBAR ========== -->
+      <!-- ========== NAVBAR ========== -->
+      <section class="flex flex-row h-16 lg:h-21 border justify-between items-center pt-6 lg:pt-0 pr-4 lg:pr-35 pb-6 lg:pb-0 pl-4 lg:pl-35 bg-black">
+        <div class="lg:flex:flex-row lg:w-20 lg:h-9 gap-2">
+          <p class="w-16.25 h-9 font-bold font-inter text-2xl leading-9 text-neutral-50">
+          Tech.
+        </p>
+        </div>
+        <div class="flex flex-row lg:w-88.25 lg:h-9 gap-3 justify-center">
+          <nav class="flex flex-row w-18 h-9 rounded-full pt-2 pr-4 pb-2 lg:pl-4 gap-1.5">
+            <a class="w-10 h-7 font-normal font-inter text-sm sm:text-xs leading-7 text-neutral-50" href="#">About</a>
+          </nav>
+          <nav class="flex flex-row w-20.5 h-9 rounded-full pt-2 pr-4 pb-2 pl-4 gap-1.5">
+            <a class="w-12.5 h-7 font-normal font-inter text-sm sm:text-xs leading-7 text-neutral-50" href="#">Service</a>
+          </nav>
+          <nav class="flex flex-row w-23.5 h-9 rounded-full pt-2 pr-4 pb-2 pl-4 gap-1.5">
+            <a class="w-15.5 h-7 font-normal font-inter text-sm sm:text-xs leading-7 text-neutral-50" href="#">Our Work</a>
+          </nav>
+          <nav class="flex flex-row w-17.25 h-9 rounded-full pt-2 pr-4 pb-2 pl-4 gap-1.5">
+            <a class="w-9.25 h-7 font-normal font-inter text-sm sm:text-xs leading-7 text-neutral-50" href="#">Team </a>
+          </nav>
+        </div>
+        <div class="flex flex-row w-40 h-11 justify-center rounded-full p-2 gap-1 bg-[#421ABC] hover:bg-blue-800">
+          <button class="w-20.75 h-7.5 font-semibold font-inter text-base sm:text-sm leading-7.5 text-white text-center">
+            Contact Us
+          </button>
+        </div>
+        <!-- HAMBURGER BUTTON -->
+        <!-- <div class="flex flex-row w-74.25 h-6 gap-2 items-center justify-center"> -->
+          <button id="menu-btn" class="fixed top-5 right-5 z-50 flex flex-col space-y-1">
+            <span class="w-4.5 h-1 bg-white"></span>
+            <span class="w-4.5 h-1 bg-white"></span>
+            <span class="w-4.5 h-1 bg-white"></span>
+          </button>
 
-    <!-- ========== HERO SECTION ========== -->
+<!-- OVERLAY MENU -->
+          <div id="menu" class="fixed inset-0 bg-black text-white hidden flex-col p-6 z-40">
 
-    <!-- ========== FOOTER ========== -->
+  <!-- HEADER -->
+            <div class="flex justify-between items-center mb-10">
+              <h1 class="text-2xl font-bold font-inter">Tech.</h1>
+              <button id="close-btn" class="text-2xl">&times;</button>
+            </div>
+
+  <!-- MENU ITEMS -->
+          <div class="flex flex-col w-90.25 h-60 top-20 left-4 gap-3">
+            <nav class="flex flex-col w-90.25 h-9 rounded-full pt-2 pb-2 gap-1.5">
+              <a href="#" class="hover:text-neutral-400 font-normal font-inter text-sm leading-7 text-neutral-50">About</a>
+              <a href="#" class="hover:text-neutral-400 font-normal font-inter text-sm leading-7 text-neutral-50">Service</a>
+              <a href="#" class="hover:text-neutral-400 font-normal font-inter text-sm leading-7 text-neutral-50">Our Work</a>
+              <a href="#" class="hover:text-neutral-400 font-normal font-inter text-sm leading-7 text-neutral-50">Team</a>
+            </nav>
+          </div>
+  <!-- BUTTON -->
+            <div class="w-90.25 h-12 py-2 gap-1 rounded-full bg-[#421ABC] hover:bg-blue-800">
+              <button class="w-19 h-7 font-semibold font-inter text-sm leading-7 text-white">
+                Contact Us
+              </button>
+            </div>
+          </div>
+        <!-- </div> -->
+        <div>
+        </div>
+      </section>
+      <!-- ========== HERO SECTION ========== -->
+      <section
+        class=' flex flex-col lg:flex-row justify-center items-center h-180 lg:h-187.5 pt-10 lg:pt-0 pr-5 lg:pr-35 pb-10 lg:pb-0 pl-5 lg:pl-35 gap-4.5 bg-linear-to-b from-black to-[#210A5E]'
+      >
+        <div class="flex flex-col w-88.5 lg:w-171.75 h-76 lg:h-70.5 gap-6 lg:gap-12">
+          <div class="w-88.5 lg:w-171.75 h-58 lg:h-46.5 gap-4 flex flex-col">
+            <h1
+              class="w-88.5 lg:w-171.75 h-24 lg:h-17 font-inter font-bold text-4xl lg:text-5xl leading-12 lg:leading-17 text-white"
+            >
+              Build with the <span class="italic">Future.</span>
+            </h1>
+            <p
+              class="w-88.5 lg:w-171.75 h-30 lg:h-25.5 text-base lg:text-xl font-normal leading-7.5 lg:leading-8.5 font-inter text-neutral-500"
+            >
+              From building sleek websites and mobile apps to integrating AI
+              solutions, we help brands turn ideas into powerful digital
+              experiences that connect, engage, and scale.
+            </p>
+          </div>
+          <div
+            class="flex justify-center w-88.5 lg:w-75 h-12 border rounded-full gap-1 p-2 bg-[#421ABC] hover:bg-blue-800 text-center"
+          >
+            <button
+              class="w-16 lg:w-18 h-7 lg:h-7.5 font-semibold font-inter text-sm lg:text-base leading-7 lg:leading-7.5 text-white tracking-normal"
+            >
+            Let’s Talk
+            </button>
+          </div>
+        </div>
+          <img class="flex items-center w-77.2125 lg:w-148.805 h-100 lg:h-187.75" src="../assets/images/hand.png" alt="holder Handphone" />
+      </section>
+      <section class='flex justify-center h-61.5 lg:h-83 pt-10 lg:pt-20 pr-5 lg:pr-35 pb-10 lg:pb-20 pl-5 lg:pl-35 gap-4 lg:gap-8 bg-black  text-neutral-50'>
+        <div><h1 class="w-88.5 lg:w-290 h-9.5 lg:h-14 font-bold font-inter text-2xl lg:text-4xl leading-9.5 text-center">Who We Are 
+        </h1><p class="w-88.5 lg:w-290 h-9.5 lg:h-14 font-semibold font-inter text-lg leading-7 text-center">
+          <span class="text-neutral-500">We're a group of tech students trained in</span> building real-world digital products.
+        </br>
+          <span class="text-neutral-500">From coding to design, we </span>craft modern solutions for modern problems.
+        </p>
+        </div>
+      </section>
+      <section class="h-261.5 lg:h-194 pt-10 lg:pt-20 pr-4 lg:pr-35 pb-10 lg:pb-20 pl-4 lg:pl-35 gap-6 lg:gap-16 bg-black flex flex-col justify-center items-center align-middle">
+        <div class="justify-center w-87 lg:w-290 h-25.5 lg:26 gap-2 lg:gap-4">
+          <h1 class="w-87 lg:w-290 h-9.5 lg:h-14 font-bold font-inter text-2xl lg:text-4xl leading-9.5 lg:leading-14 text-center text-neutral-50">
+            What We Do
+          </h1>
+          <p class="w-87 lg:w-290 h-9.5 lg:h-8 font-normal font-inter text-sm lg:text-lg leading-7 lg:leading-8 text-center text-neutral-500">
+            We offer simple tech solutions to help your ideas grow.
+          </p>
+        </div>
+        <div class="grid grid-cols-2 lg:grid-cols-3 items-center justify-center w-87 lg:w-290 h-210 lg:h-112 gap-4 lg:gap-5">
+          <div class=" flex flex-col w-41.5 lg:w-93 h-70 lg:h-53.5 border border-neutral-900 p-4 lg:p-6 gap-5 rounded justify-center items-center">
+            <div class="w-12 h-12 flex justify-center items-center">
+              <img src="../assets/images/Web Development.svg" alt="Web Development">
+            </div>
+            <div class="w-33.5 lg:w-81.5 h-45 lg:h-24.5 gap-1">
+              <h1 class="w-33.5 lg:w-81.5 h-16 lg:h-8.5 font-bold font-inter text-lg lg:text-xl leading-8 lg:leading-8.5 text-center text-neutral-50">
+                Web Development
+                 <p class="w-33.5 lg:w-81.5 h-28 lg:h-15 font-normal font-inter text-sm lg:text-base leading-7 lg:leading-7.5 text-neutral-500">
+                  Modern websites using HTML, CSS, JavaScript, and frameworks.
+                  </p>
+              </h1>
+            </div>
+          </div>
+          <div class=" flex flex-col w-41.5 lg:w-93.5 h-70 lg:h-53.5 border border-neutral-900 p-4 lg:p-6 gap-5 rounded justify-center items-center">
+            <div class="w-12 h-12 flex justify-center items-center">
+              <img src="../assets/images/App Development.svg" alt="App Development">
+            </div>
+            <div class="w-33.5 lg:w-81.5 h-45 lg:h-24.5 gap-1">
+              <h1 class="w-33.5 lg:w-81.5 h-16 lg:h-8.5 font-bold font-inter text-lg lg:text-xl leading-8 lg:leading-8.5 text-center text-neutral-50">
+                App Development
+                <p class="w-33.5 lg:w-81.5 h-28 lg:h-15 font-normal font-inter text-sm lg:text-base leading-7 lg:leading-7.5 text-neutral-500">
+                  Mobile and desktop apps tailored for your needs
+                </p>
+              </h1>
+            </div>
+          </div>
+          <div class=" flex flex-col w-41.5 lg:w-93.5 h-70 lg:h-53.5 border border-neutral-900 p-4 gap-5 rounded justify-center items-center">
+            <div class="w-12 h-12 flex justify-center items-center">
+              <img src="../assets/images/AI Integration.svg" alt="AI Integration">
+            </div>
+            <div class="w-33.5 lg:w-81.5 h-45 lg:h-24.5 gap-1">
+              <h1 class="w-33.5 lg:w-81.5 h-16 lg:h-8.5 font-bold font-inter text-lg lg:text-xl leading-8 lg:leading-8.5 text-center text-neutral-50">
+                AI Integration
+                <p class="w-33.5 lg:w-81.5 h-28 lg:h-15 font-normal font-inter text-sm lg:text-base leading-7 lg:leading-7.5 text-neutral-500">
+                  Smart solutions using AI-powered tools and automation.
+                </p>
+              </h1>
+            </div>
+          </div>
+          <div class=" flex flex-col w-41.5 lg:w-93.5 h-70 lg:h-53.5 border border-neutral-900 p-4 gap-5 rounded justify-center items-center">
+            <div class="w-12 h-12 flex justify-center items-center">
+              <img src="../assets/images/UIUX Design.svg" alt="UI/UX Design">
+            </div>
+            <div class="w-33.5 lg:w-81.5 h-45 lg:h-24.5 gap-1">
+              <h1 class="w-33.5 lg:w-81.5 h-16 lg:h-8.5 font-bold font-inter text-lg lg:text-xl leading-8 lg:leading-8.5 text-center text-neutral-50">
+                UI/UX Design
+                <p class="w-33.5 lg:w-81.5 h-28 lg:h-15 font-normal font-inter text-sm lg:text-base leading-7 lg:leading-7.5 text-neutral-500">
+                  Clean and functional designs for better user experience.
+                </p>
+              </h1>
+            </div>
+          </div>
+          <div class=" flex flex-col w-41.5 lg:w-93.5 h-70 lg:h-53.5 border border-neutral-900 p-4 gap-5 rounded justify-center items-center">
+            <div class="w-12 h-12 flex justify-center items-center">
+              <img src="../assets/images/Landing Page Design.svg" alt="Landing Page Design">
+            </div>
+            <div class="w-33.5 lg:w-81.5 h-45 lg:h-24.5 gap-1">
+              <h1 class="w-33.5 lg:w-81.5 h-16 lg:h-8.5 font-bold font-inter text-lg lg:text-xl leading-8 lg:leading-8.5 text-center text-neutral-50">
+                Landing Page Design
+                <p class="w-33.5 lg:w-81.5 h-28 lg:h-15 font-normal font-inter text-sm lg:text-base leading-7 lg:leading-7.5 text-neutral-500">
+                  High-converting landing pages for your product or business.
+                </p>
+              </h1>
+            </div>
+          </div>
+          <div class=" flex flex-col w-41.5 lg:w-93.5 h-70 lg:h-53.5 border border-neutral-900 p-4 gap-5 rounded justify-center items-center">
+            <div class="w-12 h-12 flex justify-center items-center">
+               <img src="../assets/images/CMS Integration.svg" alt="CMS Integration">
+            </div>
+             <div class="w-33.5 lg:w-81.5 h-45 lg:h-24.5 gap-1">
+              <h1 class="w-33.5 lg:w-81.5 h-16 lg:h-8.5 font-bold font-inter text-lg lg:text-xl leading-8 lg:leading-8.5 text-center text-neutral-50">
+                CMS Integration
+                <p class="w-33.5 lg:w-81.5 h-28 lg:h-15 font-normal font-inter text-sm lg:text-base leading-7 lg:leading-7.5 text-neutral-500">
+                  Easy-to-manage websites with WordPress or Webflow.
+                </p>
+              </h1>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="flex flex-col justify-center items-center h-358 lg:h-188.75 pt-10 lg:pt-20 pr-5 lg:pr-35 pb-10 lg:pb-20 pl-5 lg:pl-35 gap-6 lg:gap-16 bg-black">
+        <div class="w-88.25 lg:w-290 h-19 lg:h-26 gap-2 lg:gap-4 text-center">
+          <h1 class="w-88.25 lg:w-290 h-9.5 lg:h-14 font-bold font-inter text-2xl lg:text-4xl leading-9.5 text-center text-neutral-50">
+            Our Work
+            <p class="w-88.25 lg:w-290 h-7.5 lg:h-8 font-normal font-inter text-base leading-7.5 text-center text-neutral-500">
+              See what we’ve built with passion and purpose
+            </p>
+          </h1>
+        </div>
+        <div class="flex flex-col lg:flex-row flex-wrap justify-center w-90.25 lg:w-289.75 h-313 lg:h-106.75 gap-5">
+          <div class="flex flex-col flex-wrap w-90.25 lg:w-93.25 h-101 lg:h-106.75 gap-3.25 lg:gap-5">
+            <img class="w-90.25 lg:w-93.25 h-90.25 lg:h-93.25 rounded" src="../assets/images/portfolio card1.svg" alt="Portfolio 1">
+            <div class="w-90.25 lg:93.25 h-7.5 lg:h-8.5">
+              <p class="font-bold font-inter text-base leading-7.5 text-neutral-50">
+                Portofolio 1
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-col flex-wrap w-90.25 lg:w-93.25 h-101 lg:h-106.75 gap-3.25 lg:gap-5">
+            <img class="w-90.25 lg:w-93.25 h-90.25 lg:h-93.25 rounded" src="../assets/images/portfolio card2.svg" alt="Portfolio 2">
+            <div class="w-90.25 lg:93.25 h-7.5 lg:h-8.5">
+              <p class="font-bold font-inter text-base leading-7.5 text-neutral-50">
+                Portofolio 2
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-col flex-wrap w-90.25 lg:w-93.25 h-101 lg:h-106.75 gap-3.25 lg:gap-5">
+            <img class="w-90.25 lg:w-93.25 h-90.25 lg:h-93.25 rounded" src="../assets/images/portfolio card3.svg" alt="Portfolio 3">
+            <div class="w-90.25 lg:93.25 h-7.5 lg:h-8.5">
+              <p class="font-bold font-inter text-base leading-7.5 text-neutral-50">
+                Portofolio 3
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="flex flex-col justify-center items-center h-170 lg:h-159 pt-10 lg:pt20 pr-5 lg:pr35 pb-10 lg:pb-20 pl-5 lg:pl-35 gap-8 lg:gap-16 bg-black">
+        <div class="w-88.25 lg:w-290 h-19 lg:h-26 gap-2 lg:gap-4">
+          <h1 class="h-9.5 lg:h-14 font-bold font-inter text-2xl lg:text-4xl leading-9.5 lg:leading-14 text-center text-neutral-50">
+            Meet the Team 
+            <p class="h-7.5 font-normal font-inter text-base leading-7.5 text-center text-neutral-500">
+              A group of future-ready tech makers.
+            </p>
+          </h1>
+        </div>
+        <div class="grid grid-cols-2 lg:flex justify-center items-center w-88.25 lg:w-290 h-123 lg:h-77 gap-6 lg:gap-14">
+          <div class="flex flex-col justify-center items-center w-40 lg:w-55 h-58.5 lg:h-77 gap-3 lg:gap-5">
+            <div class="w-40 lg:w-55 h-40 lg:h-55">
+              <img src="../assets/images/member card1.png" alt="member card1">
+            </div>
+            <div class="w-40 lg:w-55 h-15.5 lg:h-17 gap-1">
+              <h2 class="w-40 lg:w-55 h-7.5 lg:h-8.5 font-bold font-inter text-base lg:text-xl leading-7.5 lg:leading-8.5 text-center text-neutral-50">
+                Jasper Kim
+                <p class="w-40 lg:w-55 h-7 lg:h-7.5 font-normal font-inter text-sm lg:text-base leading-7 lg:leadding-7.5 text-center text-neutral-500">
+                  Project Manager
+                </p>
+              </h2>
+            </div>
+          </div>
+          <div class="flex flex-col justify-center items-center w-40 lg:w-55 h-58.5 lg:h-77 gap-3 lg:gap-5">
+            <div class="w-40 lg:w-55 h-40 lg:h-55">
+              <img src="../assets/images/member card2.png" alt="member card2">
+            </div>
+            <div class="w-40 lg:w-55 h-15.5 lg:h-17 gap-1">
+              <h2 class="w-40 lg:w-55 h-7.5 lg:h-8.5 font-bold font-inter text-base lg:text-xl leading-7.5 lg:leading-8.5 text-center text-neutral-50">
+                Alex Jonathan
+                <p class="w-40 lg:w-55 h-7 lg:h-7.5 font-normal font-inter text-sm lg:text-base leading-7 lg:leadding-7.5 text-center text-neutral-500">
+                   Full-stack Developer
+                </p>
+              </h2>
+            </div>
+          </div>
+          <div class="flex flex-col justify-center items-center w-40 lg:w-55 h-58.5 lg:h-77 gap-3 lg:gap-5">
+            <div class="w-40 lg:w-55 h-40 lg:h-55">
+              <img src="../assets/images/member card3.png" alt="member card3">
+            </div>
+            <div class="w-40 lg:w-55 h-15.5 lg:h-17 gap-1">
+              <h2 class="w-40 lg:w-55 h-7.5 lg:h-8.5 font-bold font-inter text-base lg:text-xl leading-7.5 lg:leading-8.5 text-center text-neutral-50">
+                Mario Lopez
+                <p class="w-40 lg:w-55 h-7 lg:h-7.5 font-normal font-inter text-sm lg:text-base leading-7 lg:leadding-7.5 text-center text-neutral-500">
+                    UI/UX Designer
+                </p>
+              </h2>
+            </div>
+          </div>
+          <div class="flex flex-col justify-center items-center w-40 lg:w-55 h-58.5 lg:h-77 gap-3 lg:gap-5">
+            <div class="w-40 lg:w-55 h-40 lg:h-55">
+              <img src="../assets/images/member card4.png" alt="member card4">
+            </div>
+            <div class="w-40 lg:w-55 h-15.5 lg:h-17 gap-1">
+              <h2 class="w-40 lg:w-55 h-7.5 lg:h-8.5 font-bold font-inter text-base lg:text-xl leading-7.5 lg:leading-8.5 text-center text-neutral-50">
+                Jasper Kim
+                <p class="w-40 lg:w-55 h-7 lg:h-7.5 font-normal font-inter text-sm lg:text-base leading-7 lg:leadding-7.5 text-center text-neutral-500">
+                     Data Scientist
+                </p>
+              </h2>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="flex flex-col justify-center items-center h-155 lg:h-207 pt-10 lg:pt-20 pr-5 lg:pr-35 pb-10 lg:pb-20 pl-5 lg:pl-35 gap-6 bg-black">
+        <div class="w-88.25 lg:w-290 h-19 lg:h-26 gap-2 lg:gap-4 flex justify-center items-center">
+          <h1 class="w-88.25 lg:w-290 h-9.5 lg:h-14 font-bold font-inter text-2xl lg:text-4xl leading-9.5 lg:leading-14 text-center text-neutral-50">
+             Let’s Collaborate  
+            <p class="w-88.25 lg:w-290 h-7.5 lg:h-8 font-normal font-inter text-base lg:text-lg leading-7.5 lg:leading-8 text-center text-neutral-500">
+              Need a tech team? We're ready to help
+            </p>
+          </h1>
+        </div>
+        <div class="flex flex-col justify-center items-center w-88.25 lg:w-148 h-110 lg:h-115 gap-8 lg:gap-10">
+          <div class="flex flex-col w-88.25 lg:w-148 h-91 lg:h-93 gap-4 lg:gap-5">
+            <div class="w-88.25 lg:w-148 h-20.5 gap-1.5">
+              <p class="w-88.25 lg:w-148 h-7 font-bold font-inter text-sm leading-7 text-neutral-50">
+                Name
+              </p>
+              <div class="w-88.25 lg:w-148 h-12 rounded-xl border pt-2 pr-4 pb-2 pl-4 gap-2 bg-black border-neutral-800">
+                <input type="text" class="w-80.25 h-7.5 font-normal text-base leading-7.5 text-neutral-500" placeholder="Enter your name">
+                </input>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col w-88.25 lg:w-148 h-91 lg:h-93 gap-4 lg:gap-5">
+            <div class="w-88.25 lg:w-148 h-20.5 gap-1.5">
+              <p class="w-88.25 lg:w-148 h-7 font-bold font-inter text-sm leading-7 text-neutral-50">
+                Email
+              </p>
+              <div class="w-88.25 lg:w-148 h-12 rounded-xl border pt-2 pr-4 pb-2 pl-4 gap-2 bg-black border-neutral-800">
+                <input type="email" class="w-80.25 h-7.5 font-normal text-base leading-7.5 text-neutral-500" placeholder="Enter your email">
+                </input>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col w-88.25 lg:w-148 h-91 lg:h-93 gap-4 lg:gap-5">
+            <div class="w-88.25 lg:w-148 h-42 gap-1.5">
+              <p class="w-88.25 lg:w-148 h-7 font-bold font-inter text-sm leading-7 text-neutral-50">
+                Message
+              </p>
+              <div class="w-88.25 lg:w-148 h-33.5 rounded-xl border pt-2 pr-4 pb-2 pl-4 gap-2 bg-black border-neutral-800">
+                <input type="text" class="w-80.25 h-7.5 font-normal text-base leading-7.5 text-neutral-500" placeholder="Enter your message">
+                </input>
+              </div>
+            </div>
+          </div>
+          <div class="w-88.25 lg:w-148 h-11 lg:h-12 rounded-full p-2 gap-1 bg-[#421ABC] hover:bg-blue-800 text-center">
+            <button class="w-8.75 lg:9.75 h-7 lg:h-7.5 font-semibold font-inter text-sm lg:text-base leading-7 lg:leading-7.5 text-white">
+              Send
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- ========== FOOTER ========== -->
+    <section class="flex h-18 lg:19.5 border-t pt-6 pr-2 pb-6 pl-2 gap-2 border-neutral-900 bg-black text-center align-middle justify-center">
+      <footer class="w-75.25 lg:w-93.25 h-6 lg:h-7.5 font-normal font-inter text-xs lg:text-base leading-6 lg:leading-7.5 align-middle text-neutral-500">
+        © 2025 Web Programming Hack. All rights reserved.
+      </footer>
+    </section>
+    </div>
   </body>
 </html>
